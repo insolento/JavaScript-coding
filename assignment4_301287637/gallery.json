@@ -1,0 +1,8 @@
+{
+  "images": [
+    {"filename": "dog.jpg", "duration": 5},
+    {"filename": "fox.jpg", "duration": 3},
+    {"filename": "lion.jpg", "duration": 4},
+    {"filename": "zebra.jpg", "duration": 6}
+  ]
+}

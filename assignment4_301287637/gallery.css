@@ -1,0 +1,23 @@
+body {
+    width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+    background-image: url(images/forest.jpeg);
+}
+
+div {
+    margin-top: 500px;
+    width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+    align-items: center;
+}
+button {
+    background: #2ea44f;
+    color: white;
+    border-radius: 6px;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    padding: 12px 14px;
+}
