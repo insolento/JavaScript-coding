@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--Created by: Maksym Bezverkhnii - Student #301287637-->
+<!--I didn't get anything from web but will do comments in case-->
+<html>
+    <head>
+        <title>Maksym Bezverkhnii - Midterm Test</title>
+        <meta charset="utf-8">
+        <link href="midterm.css" rel="stylesheet" type="text/css">
+        <script src="midTerm.js" defer></script>
+    </head>
+    <body>
+        <div>
+            <form>
+                <!--Creating form with all required-->
+                <fieldset>
+                    <h3>Billing Address</h3>
+                    <label>First name:</label>
+                    <input type="text" tabindex="1" placeholder="e.g. Mark" id="billing_name" required><br>
+                    <!--All of them required to make validity work-->
+                    <label>Last name:</label>
+                    <input type="text" tabindex="3" placeholder="e.g. Markov" id="billing_surname" required><br>
+                    <label>Street address:</label>
+                    <input type="text" tabindex="5" placeholder="e.g. Queen St.555" id="billing_address" required><br>
+                    <label>City:</label>
+                    <input type="text" tabindex="7" placeholder="e.g. Toronto" id="billing_city" required><br>
+                    <label>State</label>
+                    <select id="billing_state" tabindex="9">
+                        <option value="NL">NL</option>
+                        <option value="PE">PE</option>
+                        <option value="NS">NS</option>
+                        <option value="NB">NB</option>
+                        <option value="QC">QC</option>
+                        <option value="ON">ON</option>
+                        <option value="MB">MB</option>
+                        <option value="SK">SK</option>
+                        <option value="AB">AB</option>
+                        <option value="BC">BC</option>
+                        <option value="YT">YT</option>
+                        <option value="NT">NT</option>
+                        <option value="NU">NU</option>
+                    </select><br>
+                    <label>Zip:</label>
+                    <input type="text" tabindex="11" placeholder="e.g. A1A 1A1" id="billing_zip" required><br>
+                    <label>Phone:</label>
+                    <input type="tel" tabindex="13" placeholder="999-999-9999" id="billing_phone" required><br>
+                </fieldset>
+                <fieldset>
+                    <h3>Delivery Address</h3>
+                    <!--This checkbox giving on change information to Javascript function, to copy data from blling address to delivery-->
+                    <input type="checkbox" id="copy" onclick="copyFunction()"> Same as billing address <br><br>
+                    <label>First name:</label>
+                    <input type="text" tabindex="15" placeholder="e.g. Mark" id="delivery_name" required><br>
+                    <label>Last name:</label>
+                    <input type="text" tabindex="17" placeholder="e.g. Markov" id="delivery_surname" required><br>
+                    <label>Street address:</label>
+                    <input type="text" tabindex="19" placeholder="e.g. Queen St.555" id="delivery_address" required><br>
+                    <label>City:</label>
+                    <input type="text" tabindex="21" placeholder="e.g. Toronto" id="delivery_city" required><br>
+                    <label>State</label>
+                    <select id="delivery_state" tabindex="23">
+                        <option value="NL">NL</option>
+                        <option value="PE">PE</option>
+                        <option value="NS">NS</option>
+                        <option value="NB">NB</option>
+                        <option value="QC">QC</option>
+                        <option value="ON">ON</option>
+                        <option value="MB">MB</option>
+                        <option value="SK">SK</option>
+                        <option value="AB">AB</option>
+                        <option value="BC">BC</option>
+                        <option value="YT">YT</option>
+                        <option value="NT">NT</option>
+                        <option value="NU">NU</option>
+                    </select><br>
+                    <label>Zip:</label>
+                    <input type="text" tabindex="25" placeholder="e.g. A1A 1A1" id="delivery_zip" required><br>
+                    <label>Phone:</label>
+                    <input type="tel" tabindex="27" placeholder="999-999-9999" id="delivery_phone" required><br>
+                </fieldset>
+                <blockquote>
+                    <input name="btnSubmit" tabindex="29" type="submit" value="Complete Registration">
+                    <input name="btnReset" tabindex="31" type="reset" value="Clear Form">
+                </blockquote>
+            </form>
+        </div>
+        <footer>
+            <blockquote>
+                <p id="copyright">&copy; Copyright Centennial College - Mid term test - Maksym Bezverkhnii - Student #301287637</p>
+            </blockquote>
+            <!--Everything else was simple-->
+        </footer>
+    </body>
+</html>

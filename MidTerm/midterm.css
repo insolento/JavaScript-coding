@@ -1,0 +1,16 @@
+h3 {
+    font-family: cursive;
+}
+fieldset {
+    width: 500;
+    margin-bottom: 20;
+    border-width: 10;
+    border-color: purple;
+}
+input:valid {
+    background-color: white;
+}
+input:invalid {
+    /* Giving style for different the valid and unvalid value */
+    background-color: pink;
+}
